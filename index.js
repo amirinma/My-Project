@@ -29,12 +29,31 @@ rightHead.textContent = 'Login/Logout';
 
 
 const mainChildThirdEl = document.getElementById('main-dv-child3');
-mainChildThirdEl.appendChild(document.createElement('div')).setAttribute('id', 'container1')
+//mainChildThirdEl.appendChild(document.createElement('div')).setAttribute('id', 'container1')
+elemGenerator(mainChildThirdEl, 3, 'div', 'id', 'container');
+elemGenerator(document.getElementById('container0'), 4, 'button', 'id', 'nav-btn');
+
+let navBtn1 = document.getElementById('nav-btn0')
+navBtn1.textContent = 'Chart'
+let navBtn2 = document.getElementById('nav-btn1')
+navBtn2.textContent = 'Portfolio'
+let navBtn3 = document.getElementById('nav-btn2')
+navBtn3.textContent = 'Chart1'
+let navBtn4 = document.getElementById('nav-btn3')
+navBtn4.textContent = 'Chart2'
+
+//elemGenerator(document.getElementById('container1'), 2, 'button', 'id', 'test')
 // mainChildThirdEl.childNodes.forEach(function(item) {
 //   elementId++;
 //   item.setAttribute('id', `${item.getAttribute('class') + elementId}`)
 
 // })
+
+elemGenerator(document.getElementById('container2'), 2, 'button', 'id', 'transaction-btn')
+let buyBtn = document.getElementById('transaction-btn0');
+buyBtn.textContent = 'Buy'
+let sellBtn = document.getElementById('transaction-btn1')
+sellBtn.textContent = 'Sell'
 //============================
 const isElementLoaded = async selector => {
   while ( document.querySelector(selector) === null) {
@@ -129,13 +148,14 @@ window.onload = function () {
   }
 }
 // Fetching open and close price
-async function getData(){
-  const res = await fetch('https://api.polygon.io/v2/aggs/ticker/AAPL/range/1/day/2023-01-09/2023-01-09?adjusted=true&sort=asc&limit=120&apiKey=OFq3eK3caAqNsWB33pQfQwVtTygClgup')
-  const data = await res.json()
-  console.log('I am running')
-  console.log(data)
-}
-getData();
+// async function getData(){
+//   const res = await fetch('https://api.polygon.io/v2/aggs/ticker/AAPL/range/1/day/2023-01-09/2023-01-09?adjusted=true&sort=asc&limit=120&apiKey=OFq3eK3caAqNsWB33pQfQwVtTygClgup')
+//   const data = await res.json()
+//   console.log('I am running')
+//   console.log(data)
+// }
+// getData();
+// create form page buttons
 
 
 // creates child elements
