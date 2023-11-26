@@ -1,3 +1,18 @@
+//=========================================================== Creating Nav Bar
+
+  elemGenerator(document.getElementById('top-nav'), 4, 'a', 'id', 'top-nav-' )
+  let navOne =document.getElementById('top-nav-0')
+  navOne.textContent = 'Home'
+  let navTwo =document.getElementById('top-nav-1')
+  navTwo.textContent = 'Trade'
+  let navThree =document.getElementById('top-nav-2')
+  navThree.textContent = 'Feed'
+  let navFour =document.getElementById('top-nav-3')
+  navFour.textContent = 'Inquiry'
+
+
+
+//=========================================================== Creating Nav Bar
 document.querySelector('body').appendChild(document.createElement('div')).setAttribute('id', 'main-div')
 let mainDiv = document.getElementById('main-div');
 elemGenerator(mainDiv, 5, 'div', 'class', 'main-dv-child');

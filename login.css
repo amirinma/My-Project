@@ -1,0 +1,25 @@
+#main-login {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#login-frm0 input{
+  display: block;
+  width: 300px;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 5px;
+  border: 2px solid #172432;
+}
+
+button {
+  display: inline-block;
+  background-color: #172432;
+  border: none;
+  color: #ddd;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
