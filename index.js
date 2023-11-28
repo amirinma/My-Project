@@ -280,13 +280,13 @@ console.log(document.getElementById('main-dv-child2').children)
 for (let item of document.getElementById('main-dv-child2').children){
   item.setAttribute('class', 'mn-dv2-child')
 }
-// Creating search input
+//====================================================================== Creating search input
 let ticker = 'BTC'
 document.getElementById('main-ch2-dv0').textContent = ticker
 document.getElementById('main-ch2-dv1').appendChild(document.createElement('form')).setAttribute('id', 'search-frm')
 let searchFrm = document.getElementById('search-frm')
 
-searchFrm.appendChild(document.createElement('label')).textContent = 'ticker'
+searchFrm.appendChild(document.createElement('label')).textContent = 'Look Up  '
 searchFrm.appendChild(document.createElement('input')).setAttribute('id', 'search-input')
 let searchFrmInput = document.getElementById('search-input')
   searchFrmInput.type = 'text'
